@@ -78,7 +78,7 @@ if (window.innerWidth < 576) {
     for (let i = 1; i <= 6; i++) {
         let swiperSlide = document.createElement('div');
         swiperSlide.classList.add('swiper-slide');
-        swiperSlide.innerHTML = `<img src="./assets/images/wedding/slider_small/slider_${i}.JPG" alt="slider-small-${i}">`;
+        swiperSlide.innerHTML = `<img src="./assets/images/wedding/slider_small/slider_${i}.jpg" alt="slider-small-${i}">`;
         swiperWrapper.appendChild(swiperSlide);
     }
 } else {
@@ -86,7 +86,7 @@ if (window.innerWidth < 576) {
     for (let i = 1; i <= 6; i++) {
         let swiperSlide = document.createElement('div');
         swiperSlide.classList.add('swiper-slide');
-        swiperSlide.innerHTML = `<img src="./assets/images/wedding/slider_big/slider_${i}.JPG" alt="slider-big-${i}">`;
+        swiperSlide.innerHTML = `<img src="./assets/images/wedding/slider_big/slider_${i}.jpg" alt="slider-big-${i}">`;
         swiperWrapper.appendChild(swiperSlide);
     }
 }
@@ -97,7 +97,7 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false
     },
     breakpoints: {

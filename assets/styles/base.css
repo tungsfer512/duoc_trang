@@ -38,3 +38,15 @@ html {
 .cursor-pointer {
     cursor: pointer !important;
 }
+
+@media (min-width: 350px) and (max-width: 576px) {
+    .d-ssm-flex {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 350px) {
+    .d-ssm-none {
+        display: none !important;
+    }
+}

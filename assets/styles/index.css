@@ -51,6 +51,15 @@
     display: none;
 }
 
+#floating-music-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    z-index: 15000;
+}
+
 .x1 {
     left: 5%;
     -webkit-transform: scale(0.9);
@@ -239,6 +248,247 @@
     font-family: "Great Vibes", cursive;
 }
 
+.font-dancing-script {
+    font-family: "Dacing Script", cursive;
+}
+
 .h-560 {
-    height: 560px;
+    min-height: 560px;
+    height: max-content;
+}
+
+.ribbon2 {
+    width: 60px;
+    padding: 10px 0;
+    position: absolute;
+    top: -6px;
+    left: 25px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    background: #f98eff;
+    color: #fff;
+}
+
+.ribbon2:before {
+    height: 0;
+    width: 0;
+    right: -5.5px;
+    top: 0.1px;
+    border-bottom: 6px solid #f200ff;
+    border-right: 6px solid transparent;
+}
+
+.ribbon2:before,
+.ribbon2:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon2:after {
+    height: 0;
+    width: 0;
+    bottom: -29.5px;
+    left: 0;
+    border-left: 30px solid #f98eff;
+    border-right: 30px solid #f98eff;
+    border-bottom: 30px solid transparent;
+}
+
+.ribbon1 {
+    width: 60px;
+    padding: 10px 0;
+    position: absolute;
+    top: -6px;
+    left: 25px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    background: #0096ed;
+    color: #fff;
+}
+
+.ribbon1:before {
+    height: 0;
+    width: 0;
+    right: -5.5px;
+    top: 0.1px;
+    border-bottom: 6px solid #0070b0;
+    border-right: 6px solid transparent;
+}
+
+.ribbon1:before,
+.ribbon1:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon1:after {
+    height: 0;
+    width: 0;
+    bottom: -29.5px;
+    left: 0;
+    border-left: 30px solid #0096ed;
+    border-right: 30px solid #0096ed;
+    border-bottom: 30px solid transparent;
+}
+
+.my-badge {
+    position: absolute;
+    bottom: 8px;
+    left: -9px;
+    width: calc(100% + 18px);
+}
+
+.my-badge span {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 1px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+.my-badge-chure {
+    background: #45beff;
+}
+
+.my-badge-codau {
+    background: #d685c0;
+}
+
+.my-badge:before,
+.my-badge:after,
+.my-badge span:before,
+.my-badge span:after {
+    position: absolute;
+    content: '';
+}
+
+.my-badge:before,
+.my-badge:after {
+    top: -13px;
+    z-index: -3;
+    border-width: 26px;
+    border-style: solid;
+}
+
+.my-badge-codau:before {
+    left: -32px;
+    border-color: #d685c0 #d685c0 #d685c0 transparent;
+}
+
+.my-badge-codau:after {
+    right: -32px;
+    border-color: #d685c0 transparent #d685c0 #d685c0;
+}
+
+.my-badge-chure:before {
+    left: -32px;
+    border-color: #45beff #45beff #45beff transparent;
+}
+
+.my-badge-chure:after {
+    right: -32px;
+    border-color: #45beff transparent #45beff #45beff;
+}
+
+.my-badge span:before,
+.my-badge span:after {
+    top: -13px;
+    z-index: -2;
+    border-width: 15px 22px;
+    border-style: solid;
+    border-color: transparent #ccc transparent transparent;
+}
+
+.my-badge span:before {
+    left: -23px;
+}
+
+.my-badge span:after {
+    right: -23px;
+    border-color: transparent transparent transparent #ccc;
+}
+
+.info-couple {
+    font-size: 1vw;
+}
+
+@media (max-width: 768px) {
+    .info-couple {
+        font-size: 2vw;
+    }
+}
+
+.album-image {
+    cursor: pointer !important;
+}
+
+.album-image:hover {
+    opacity: 0.8;
+}
+
+.qrcode-image {
+    width: 300px;
+}
+
+@media (max-width: 320px) {
+    .info-couple {
+        font-size: 2vw;
+    }
+
+    .qrcode-image {
+        width: 70vw;
+    }
+
+    .qrcode-heading {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 360px) {
+
+    td,
+    th {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    td,
+    th {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 340px) {
+
+    td,
+    th {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    td,
+    th,
+    .countdown-clock-label {
+        font-size: 10px;
+    }
+
+    .qrcode-content {
+        font-size: 12px !important;
+    }
+}
+
+.thank-you {
+    font-size: 50px;
+}
+
+@media (max-width: 590px) {
+
+    .thank-you {
+        font-size: 6vw;
+    }
 }

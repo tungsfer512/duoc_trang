@@ -1,0 +1,94 @@
+html,body {
+	background: #800;
+	color: #fff;
+}
+#badge {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width: 300px;
+	height: 300px;
+}
+
+i {
+	position: absolute;
+	bottom: -62px;
+	left: 9px;
+	z-index: -1;
+	font-size: 380px;
+	line-height: 312px;
+	width: 100%;
+	text-align: center;
+	color: #800;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: 0 0 3px #333;
+	background: #f4f4f4;
+}
+
+.icomoon {
+	position: absolute;
+	bottom: 62px;
+	left: -9px;
+	width: 328px;
+}
+
+.icomoon span {
+	display: block;
+	padding: 10px 20px;
+	border-radius: 1px;
+	background: #fff;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	color: #800;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 #999;
+	font-size: 36px;
+	font-family: 'Ultra';
+}
+
+.icomoon:before,
+.icomoon:after,
+.icomoon span:before,
+.icomoon span:after {
+	position: absolute;
+	content: '';
+}
+	
+.icomoon:before,
+.icomoon:after {
+	top: -13px;
+	z-index: -3;
+	border-width: 26px;
+	border-style: solid;
+	border-color: #fff #fff #fff transparent;
+}
+
+.icomoon:before {
+	left: -32px;
+}
+
+.icomoon:after {
+	right: -32px;
+	border-color: #fff transparent #fff #fff;
+}
+
+.icomoon span:before,
+.icomoon span:after {
+	top: -13px;
+	z-index: -2;
+	border-width: 15px 22px;
+	border-style: solid;
+	border-color: transparent #ccc transparent transparent;
+}
+
+.icomoon span:before {
+	left: -23px;
+}
+
+.icomoon span:after {
+	right: -23px;
+	border-color: transparent transparent transparent #ccc;
+}

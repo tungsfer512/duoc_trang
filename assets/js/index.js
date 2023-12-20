@@ -2,8 +2,6 @@
 const bgAudio = new Audio('./assets/audios/bg-audio.mp3');
 bgAudio.loop = true;
 bgAudio.volume = 1;
-// const floatingSoundBtn = document.getElementById('floating-sound-btn');
-// const floatingMutedBtn = document.getElementById('floating-muted-btn');
 const floatingMusicBtn = document.getElementById('floating-music-btn');
 floatingMusicBtn.setAttribute('custom-muted', 'true');
 floatingMusicBtn.innerHTML = '<ion-icon id="floating-muted-btn" name="volume-mute-outline"></ion-icon>';
@@ -54,11 +52,17 @@ btnToTop.addEventListener('click', (e) => {
     hideOffCanvas();
     smoothScrollToId('top-of-page');
 })
-const navLecuoi = document.getElementById('nav-lecuoi');
-navLecuoi.addEventListener('click', (e) => {
+const navLoimoi = document.getElementById('nav-loimoi');
+navLoimoi.addEventListener('click', (e) => {
     e.preventDefault();
     hideOffCanvas();
-    smoothScrollToId('lecuoi');
+    smoothScrollToId('loimoi');
+})
+const navTieccuoi = document.getElementById('nav-tieccuoi');
+navTieccuoi.addEventListener('click', (e) => {
+    e.preventDefault();
+    hideOffCanvas();
+    smoothScrollToId('tieccuoi');
 })
 const navCodauchure = document.getElementById('nav-codauchure');
 navCodauchure.addEventListener('click', (e) => {
@@ -66,12 +70,6 @@ navCodauchure.addEventListener('click', (e) => {
     hideOffCanvas();
     smoothScrollToId('codauchure');
 })
-// const navChuyentinhyeu = document.getElementById('nav-chuyentinhyeu');
-// navChuyentinhyeu.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     hideOffCanvas();
-//     smoothScrollToId('chuyentinhyeu');
-// })
 const navAlbumanhcuoi = document.getElementById('nav-albumanhcuoi');
 navAlbumanhcuoi.addEventListener('click', (e) => {
     e.preventDefault();
@@ -139,7 +137,7 @@ if (window.innerWidth < 576) {
     }
 } else {
     let swiperWrapper = document.querySelector('.mySwiper .swiper-wrapper');
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 4; i++) {
         let swiperSlide = document.createElement('div');
         swiperSlide.classList.add('swiper-slide');
         swiperSlide.innerHTML = `<img src="./assets/images/wedding/slider_big/slider_${i}.jpg" alt="slider-big-${i}">`;
@@ -224,30 +222,19 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
-let countDownDate = new Date("Dec 31, 2023 15:00:00").getTime();
+let countDownDate = new Date("Dec 31, 2023 07:00:00").getTime();
 
-// Update the count down every 1 second
 let x = setInterval(function () {
-
-    // Get today's date and time
     let now = new Date().getTime();
-
-    // Find the distance between now and the count down date
     let distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="demo"
     document.getElementById("ngay").innerHTML = days;
     document.getElementById("gio").innerHTML = hours;
     document.getElementById("phut").innerHTML = minutes;
     document.getElementById("giay").innerHTML = seconds;
-
-    // If the count down is over, write some text 
     if (distance < 0) {
         document.getElementById("ngay").innerHTML = 0;
         document.getElementById("gio").innerHTML = 0;
@@ -260,7 +247,6 @@ let x = setInterval(function () {
 const send_message = async (text) => {
     const API_TOKEN = '6340000511:AAHRacEXR8AfXKZOAp14NAm7VRFgG6Gjt2I'
     const CHAT_ID = '5574718005'
-    message = 'Có tin nhắn cần chuyên viên hỗ trợ'
     let path = 'https://api.telegram.org/bot' + API_TOKEN + '/sendMessage';
     return axios.post(path, {
         chat_id: CHAT_ID,
@@ -302,6 +288,6 @@ btnGuiLoiChuc.addEventListener('click', async (e) => {
         position: 'right',
         backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
         stopOnFocus: true,
-        onClick: function () { } // Callback after click
+        onClick: function () { }
     }).showToast();
 });

@@ -480,6 +480,14 @@
     .qrcode-content {
         font-size: 12px !important;
     }
+
+    .time-place-heading {
+        flex-direction: column !important;
+    }
+
+    .time-place-none {
+        display: none;
+    }
 }
 
 .thank-you {
@@ -491,4 +499,17 @@
     .thank-you {
         font-size: 6vw;
     }
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.map-icon {
+    width: 30px;
+    height: 30px;
 }

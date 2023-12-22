@@ -513,3 +513,34 @@
     width: 30px;
     height: 30px;
 }
+
+.invitation-left-img {
+    position: absolute;
+    top: -32px;
+    left: -72px;
+    z-index: 0;
+}
+
+.invitation-right-img {
+    position: absolute;
+    bottom: -32px;
+    right: 0px;
+    z-index: 0;
+}
+
+@media (max-width: 495px) {
+
+    .invitation-left-img {
+        width: 50%;
+        left: -12px;
+        height: auto;
+    }
+    .invitation-right-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.zindex-content {
+    z-index: 2;
+}

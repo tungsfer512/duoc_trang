@@ -49,6 +49,7 @@
     height: 50px;
     width: 50px;
     display: none;
+    z-index: 1000;
 }
 
 #floating-music-btn {
@@ -543,4 +544,28 @@
 
 .zindex-content {
     z-index: 2;
+}
+
+.icon-moitiec-left {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 150px;
+    width: auto;
+    z-index: 0;
+}
+.icon-moitiec-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+    width: auto;
+    z-index: 0;
+}
+
+.icon-moitiec-chure {
+    top: -4px !important;
+}
+.icon-moitiec-codau {
+    top: 0 !important;
 }

@@ -433,7 +433,7 @@
 
 @media (max-width: 320px) {
     .info-couple {
-        font-size: 2vw;
+        font-size: 14px;
     }
 
     .qrcode-image {
